@@ -4,8 +4,8 @@ Source for Anu's personal site, published at <https://anuraj31415.github.io>.
 
 It is a plain static site: `index.html`, `style.css` and `404.html` (the 404 page
 is served by GitHub Pages for unknown paths). No JavaScript, no tracking and no
-external resources: system fonts only. The design idea is that the site is a
-diff, so green and red are the only accent colours. `.nojekyll` tells GitHub Pages to serve
+external resources: system fonts only. Green and red are the only accent colours,
+and the 404 page uses the diff styling. `.nojekyll` tells GitHub Pages to serve
 the files as-is without running Jekyll.
 
 ## Deployment

@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<!-- you read the source. respect. three files, no build step. the diff in the hero is real: that was the v1 sentence. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Anu builds backend-heavy things until he understands how they work. Projects: DeltaChecker, Typerator, repo-pulse.">
-  <meta property="og:title" content="Anu — builds backend-heavy things">
-  <meta property="og:description" content="Projects and contact links for Anu: DeltaChecker, Typerator, repo-pulse.">
+  <meta name="description" content="Anu, software developer. Projects: DeltaChecker, Typerator, repo-pulse.">
+  <meta property="og:title" content="Anu, software developer">
+  <meta property="og:description" content="Anu, software developer. Projects: DeltaChecker, Typerator, repo-pulse.">
   <meta property="og:type" content="website">
-  <title>Anu — builds backend-heavy things</title>
+  <title>Anu, software developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#projects">Skip to projects</a>
   <header>
     <h1>Anu</h1>
-    <p class="diff" role="group" aria-label="The old site sentence, struck through, and its replacement">
-      <del>anu is a software developer intern learning by building.</del>
-      <ins>I build things, mostly backend, until I understand how they actually work.</ins>
-    </p>
-    <p class="caption">git diff v1 v2. yes, that was the whole old site.</p>
-    <p class="lede">Full-stack, backend-leaning. Into systems, getting into AI.</p>
+    <p class="lede">Software developer. Mostly backend, some frontend.</p>
     <nav aria-label="Sections">
       <ul>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#contact">Find me</a></li>
       </ul>
     </nav>
@@ -33,53 +26,43 @@
 
   <main>
     <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Things I've built</h2>
-      <p>Three so far. All the code is public.</p>
+      <h2 id="projects-heading">Projects</h2>
       <ul class="projects">
         <li>
           <article>
             <h3>DeltaChecker</h3>
-            <p class="what">Paste two texts, see what changed.</p>
-            <p>A real-time text diff checker. You get unified or side-by-side views, and highlighting at character level inside changed lines, so you can see the one comma that moved. Ctrl+Enter compares, and there's a dark mode. The side-by-side view turns one flat diff into aligned rows, which is more bookkeeping than it sounds.</p>
-            <p class="stack">Next.js 16 · TypeScript · Tailwind 4 · diff-match-patch</p>
-            <p class="links"><a href="https://github.com/anuraj31415/deltachecker">source on GitHub →<span class="vh"> (DeltaChecker)</span></a></p>
+            <p>A text diff checker that runs in the browser. Paste two versions, see the changes unified or side by side, with character-level highlighting inside changed lines.</p>
+            <p class="stack">Next.js, TypeScript, Tailwind, diff-match-patch</p>
+            <p class="links"><a href="https://github.com/anuraj31415/deltachecker">Source on GitHub<span class="vh"> (DeltaChecker)</span></a></p>
           </article>
         </li>
         <li>
           <article>
             <h3>Typerator</h3>
-            <p class="what">A 30-second typing test that reacts to your score.</p>
-            <p>Minimal and distraction-free. The timer starts on your first keystroke, and WPM only counts correct characters. When time's up, a reaction clip plays from one of six tiers, bad to perfect, picked 60% by speed and 40% by accuracy. Under 40 WPM is a bad clip no matter how clean you typed. Harsh, but those are the rules. Esc restarts, and your last score stays in your browser. The scoring has unit tests, since WPM maths is exactly the kind of thing that's wrong in a quiet way.</p>
-            <p class="stack">Next.js 16 · React 19 · TypeScript · Tailwind 4 · Vitest</p>
-            <p class="links"><a href="https://github.com/anuraj31415/typerator">source on GitHub →<span class="vh"> (Typerator)</span></a></p>
+            <p>A 30-second typing test. When time's up it plays a reaction clip, picked from six tiers by your speed and accuracy.</p>
+            <p class="stack">Next.js, React, TypeScript, Tailwind, Vitest</p>
+            <p class="links"><a href="https://github.com/anuraj31415/typerator">Source on GitHub<span class="vh"> (Typerator)</span></a></p>
           </article>
         </li>
         <li>
           <article>
             <h3>repo-pulse</h3>
-            <p class="what">Your git history, summarised, from the terminal.</p>
-            <p>A small Python CLI that reads a local repo and tells you commits per day, the most-changed files and who's been committing. <code>--since</code> takes anything <code>git log</code> does, and <code>--json</code> is there if you'd rather pipe it. No dependencies beyond git itself. The analysis code returns plain data and never prints, so the CLI is a thin layer on top. It reads filenames with <code>-z</code>, so awkward names don't break it. Tests run in CI on Python 3.9 to 3.12. The folder on my laptop is still called <code>first-project</code>.</p>
-            <p class="stack">Python 3.9+ · stdlib only · pytest</p>
-            <p class="links"><a href="https://github.com/anuraj31415/repo-pulse">source on GitHub →<span class="vh"> (repo-pulse)</span></a></p>
+            <p>A Python command-line tool that summarises a local git repo: commits per day, most-changed files and contributors. It has a <code>--json</code> flag and uses only the standard library.</p>
+            <p class="stack">Python, pytest</p>
+            <p class="links"><a href="https://github.com/anuraj31415/repo-pulse">Source on GitHub<span class="vh"> (repo-pulse)</span></a></p>
           </article>
         </li>
       </ul>
     </section>
 
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <p>I'm Anu. I got into programming by poking at things my older brother built, and I never really stopped.</p>
-      <p>The part I enjoy is the design underneath: where the logic lives, what the pieces should be, what should stay boring. Lately that includes AI. Right now I'm also trying to turn the building into income: freelance work, internships and a few products of my own. (I call that being an entrepreneur. Half a joke.)</p>
-    </section>
-
     <section id="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Find me</h2>
-      <p>Code lives on <a href="https://github.com/anuraj31415">GitHub</a>. Easiest way to reach me is <a href="https://x.com/anuraj31415">X, @anuraj31415</a>. I'm usually awake at odd hours. Sleep schedule is a lost cause.</p>
+      <p><a href="https://github.com/anuraj31415">GitHub</a> and <a href="https://x.com/anuraj31415">X (@anuraj31415)</a>.</p>
     </section>
   </main>
 
   <footer>
-    <p>Built by hand: one HTML file, one stylesheet, no JavaScript, no trackers. &copy; 2026 Anu</p>
+    <p>&copy; 2026 Anu</p>
   </footer>
 </body>
 </html>
