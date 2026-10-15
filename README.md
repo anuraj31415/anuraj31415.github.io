@@ -29,7 +29,7 @@ Then open <http://localhost:8000/>.
 ## Checks
 
 ```sh
-grep -rEi "linkedin|anuraj31515|<script|@import|url\(http|<img" index.html style.css 404.html  # no output
+grep -rEi "linked[i]n|anuraj3151[5]|<script|@import|url\(http|<img" index.html style.css 404.html  # no output
 grep -oE "(href|src)=\"https?://[^\"]+" index.html | sort -u   # repos, GitHub, X only
 wc -c index.html style.css 404.html                            # under 20 kB total
 ```
