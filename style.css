@@ -75,7 +75,6 @@ section { margin-top: var(--s6); }
 .projects { list-style: none; margin: var(--s3) 0 0; padding: 0; display: grid; gap: var(--s3); }
 article { border-left: 2px solid var(--rule); padding-left: var(--s3); transition: border-color 150ms; }
 article:hover, article:focus-within { border-left-color: var(--add); }
-.what { font-weight: 600; margin-bottom: var(--s1); }
 .stack { color: var(--muted); overflow-wrap: anywhere; }
 .links a { display: inline-flex; align-items: center; min-height: 44px; }
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
