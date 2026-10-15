@@ -2,8 +2,10 @@
 
 Source for Anu's personal site, published at <https://anuraj31415.github.io>.
 
-It is a plain static site: `index.html` and `style.css`, with no JavaScript,
-no tracking and no external resources. `.nojekyll` tells GitHub Pages to serve
+It is a plain static site: `index.html`, `style.css` and `404.html` (the 404 page
+is served by GitHub Pages for unknown paths). No JavaScript, no tracking and no
+external resources: system fonts only. The design idea is that the site is a
+diff, so green and red are the only accent colours. `.nojekyll` tells GitHub Pages to serve
 the files as-is without running Jekyll.
 
 ## Deployment
@@ -23,3 +25,14 @@ python3 -m http.server
 ```
 
 Then open <http://localhost:8000/>.
+
+## Checks
+
+```sh
+grep -rEi "linked[i]n|anuraj3151[5]|<script|@import|url\(http|<img" index.html style.css 404.html  # no output
+grep -oE "(href|src)=\"https?://[^\"]+" index.html | sort -u   # repos, GitHub, X only
+wc -c index.html style.css 404.html                            # under 20 kB total
+```
+
+Palette contrast was checked with the WCAG formula (body, muted, add and del
+text against the background in light and dark, hero lines against their tints).
