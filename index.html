@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Anu, software developer. Projects: DeltaChecker, Typerator, repo-pulse.">
+  <meta name="description" content="Anu, software developer. Projects: DeltaChecker, Typerator, repo-pulse, envcheck, airing, tinykv.">
   <meta property="og:title" content="Anu, software developer">
-  <meta property="og:description" content="Anu, software developer. Projects: DeltaChecker, Typerator, repo-pulse.">
+  <meta property="og:description" content="Anu, software developer. Projects: DeltaChecker, Typerator, repo-pulse, envcheck, airing, tinykv.">
   <meta property="og:type" content="website">
   <title>Anu, software developer</title>
   <link rel="stylesheet" href="style.css">
@@ -50,6 +50,30 @@
             <p>A Python command-line tool that summarises a local git repo: commits per day, most-changed files and contributors. It has a <code>--json</code> flag and uses only the standard library.</p>
             <p class="stack">Python, pytest</p>
             <p class="links"><a href="https://github.com/anuraj31415/repo-pulse">Source on GitHub<span class="vh"> (repo-pulse)</span></a></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>envcheck</h3>
+            <p>A Python command-line tool that compares a <code>.env</code> file with <code>.env.example</code> and lists the keys that are missing, extra or empty. It only prints key names, never values, and can run as a pre-commit hook.</p>
+            <p class="stack">Python, pytest</p>
+            <p class="links"><a href="https://github.com/anuraj31415/envcheck">Source on GitHub<span class="vh"> (envcheck)</span></a></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>airing</h3>
+            <p>A command-line tool that lists popular anime airing in the next 7 days, with a countdown to each episode. It reads AniList's public API and uses only the standard library.</p>
+            <p class="stack">Python, pytest</p>
+            <p class="links"><a href="https://github.com/anuraj31415/airing">Source on GitHub<span class="vh"> (airing)</span></a></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>tinykv</h3>
+            <p>A small key-value store in Python. Every write is fsynced to a write-ahead log, and on open it replays the log and drops a record that a crash cut off. The log gets compacted as it grows.</p>
+            <p class="stack">Python, pytest</p>
+            <p class="links"><a href="https://github.com/anuraj31415/tinykv">Source on GitHub<span class="vh"> (tinykv)</span></a></p>
           </article>
         </li>
       </ul>
